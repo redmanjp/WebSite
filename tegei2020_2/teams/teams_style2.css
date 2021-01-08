@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body{
+    background-color:rgb(216, 216, 216);
+    font-size:12px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family:sans-serif;
+}
+/*------------------------------------*/
+.element[data-emergence=hidden] {
+         opacity:0;
+         transform:scale(0.85);
+}
+.element[data-emergence=visible] {
+    transition: all 0.8s;
+    transform:scale(1);
+         opacity:1;
+}
+h1{
+    margin-top:0px;
+    color:white;
+    font-size:40px;
+    text-align:center;
+
+}
+h2{
+    margin-top:80px;
+    font-weight:normal;
+    color:black;
+    
+}
+h2::before{
+    content:"❐ ";
+    background: -webkit-linear-gradient(greenyellow,green 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:20px;
+}
+p{
+    padding-left:25px;
+}
+
+.h1span{
+    border-left: solid 3px greenyellow;
+   
+}
+.top{
+    display:block;
+    position:fixed;
+    bottom:0;
+    right:0;
+    font-size:12px;
+    
+    padding:10px;
+   
+    text-align:center;
+    font-weight: bold;
+    margin:10px;
+    background:linear-gradient(gray,black 99%);
+   
+    border-radius: 10px;
+    z-index: 1;      
+    color:white;
+    text-decoration:none;
+}
+.top:hover{
+    transition: all 0.3s;
+    transform: scale(1.1,1.1);
+}
+img{
+    width:210px;
+    height:140px;
+
+}
+
+.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+.item {
+    /* 横スクロール用 */
+    display: inline-block;
+  }

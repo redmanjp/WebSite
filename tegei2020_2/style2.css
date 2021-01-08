@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+body{
+    margin:0;
+    font-family:sans-serif;
+    font-size:12px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.small_text{
+    color:white;
+    text-align:center;
+    font-size:18px;
+}
+/*TOP--------------------------------------*/
+.top{
+    display:block;
+    position:fixed;
+    bottom:0;
+    right:0;
+    padding:10px;
+    text-align:center;
+    font-weight: bold;
+    margin:10px;
+    background:linear-gradient(greenyellow,green 99%);
+    border-radius: 10px;
+    z-index: 1;      
+    color:white;
+}
+.top:hover{
+    transition: all 0.3s;
+    transform: scale(1.1,1.1);
+}
+/*ロード画面ー----------------------------------------*/
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+  .liner {
+    width: 100px;
+    height: 2px;
+    margin-top: 500px;
+    background:linear-gradient(90deg,skyblue,greenyellow);;
+    animation: sk-scaleout 2s infinite ease-in-out;
+  }
+  @keyframes sk-scaleout {
+    0% {
+      width:0;
+    } 100% {
+      width:100%;
+    }
+  }
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+    
+/*文字移動-------------------------*/
+.element[data-emergence=hidden] {
+         opacity:0;
+         transform:scale(0.85);
+}
+.element[data-emergence=visible] {
+    transition: all 0.8s;
+    transform:scale(1);
+         opacity:1;
+}
+/*セクション-------------------------*/
+section{
+    height:600px;
+    position:relative;
+}
+/*セクション1-------------------------*/
+.page1{
+    height:500px;
+}
+.page1 h1 {
+}
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(0.5deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-0.5deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+.title2{
+    color:white;
+    font-weight: normal;
+    font-size:40px;
+    margin-top:100px;
+    width:100%;
+    position:absolute;
+    text-align:center;
+}
+#title{
+    position:absolute;
+    text-align:center;
+    display:block;
+    width:99%;
+    top:30px;
+
+       font-size:50px;
+    margin-top:175px;
+    background: -webkit-linear-gradient(greenyellow,skyblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+.tegei{
+    position:relative;
+    font-size:55px;
+}
+.tegei2{
+    position:absolute;
+    font-size:20px;
+    background: -webkit-linear-gradient(red,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*セクション2-------------------------*/
+.page2{
+    height:600px;
+}
+
+.pamp{
+    width:92px;
+    color:black;
+    border:black solid 1px;
+    display:block;
+   margin:50px auto;
+}
+.pamp:hover{
+    background-color:rgb(233, 233, 233);
+    color:gray;
+}
+/*セクション3-------------------------*/
+.page3{
+    height:600px;
+}
+img{
+    width:100px;
+    float:left;
+    margin:0px;
+   
+    margin-right:40px;
+    border-radius: 20px;;
+}
+
+/*セクション4-------------------------*/
+.page4{
+    height:500px;
+}
+iframe{
+    width:280px;
+    height:157px;
+    display:block;
+   margin:50px auto;
+   border:groove white 5px;
+}
+
+
+.horizontal-list {
+    margin-top:20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+/*セクション5-------------------------*/
+.page5{
+    height:500px;
+}
+.item {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 300px;
+    border-radius:40px 5px 5px 5px /40px 5px 5px 5px ;
+   
+    text-align:center;
+    /* 見た目調整 */
+    height: 250px;
+    margin: 15px;
+    font-size: 12px;
+    background: white;
+   vertical-align:bottom;
+
+  }
+
+li{
+    text-align:left;
+}
+.mini{
+        font-size:12px;
+        color:gray;
+    }
+.number{
+        margin-top:15px;
+        background:linear-gradient(orange,lightpink 99%);
+        border-radius: 30px;
+        width:50px;
+        color:white;
+        position:relative;
+        font-size:15px;
+        left:130px;
+        font-weight:bold;
+    }
+    
+   
+    
+
+  /*セクション6-------------------------*/
+ .page6{
+     height:450px;
+ }
+  .item2 {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 300px;
+    border-radius:40px 5px 5px 5px /40px 5px 5px 5px ;
+   
+    text-align:center;
+    /* 見た目調整 */
+    height: 200px;
+    margin: 15px;
+    font-size: 12px;
+    background: white;
+    vertical-align:bottom;
+  }
+
+  .number2{
+    margin-top:10px;
+    background:linear-gradient(skyblue,aquamarine 99%);
+    border-radius: 30px;
+    width:75px;
+    color:white;
+    position:relative;
+    font-size:15px;
+    left:110px;
+    font-weight:bold;
+}
+.copyright{
+    text-align:center;
+    margin-top:50px;
+    
+    background-color:white;
+}
+
+/*セクション色-------------------------*/
+.page1{
+    background:linear-gradient(rgba(1, 17, 22, 0.856),black 120%);
+}
+.page2{
+    background-color:#c9c9c9;
+}
+.page3{
+    background-color:rgb(233, 233, 233);
+}
+.page4{
+    background-color:black;
+}
+.page5{
+    background-color:rgb(200, 219, 221);
+}
+.page6{
+    background-color:gainsboro;
+}
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+タイトル2--------------------------------------*/
+h1{
+    margin-top:0;
+    color:white;
+    font-size:40px;
+    text-align:center;
+}
+.h1_smallTitle{
+    border-left: solid 3px greenyellow;
+}
+.h2_smallTitle{
+    border-left: solid 3px white;
+}
+.h3_smallTitle{
+    border-left: solid 3px palevioletred;
+}
+.h4_smallTitle{
+    border-left: solid 3px orange;
+}
+.h5_smallTitle{
+    border-left: solid 3px skyblue;
+}
+
+/*----------------------------------------*/
+
+.p2{
+    padding-left:20px;
+    padding-right:20px;
+}
+/*BOX チーム----------------------------------------*/
+
+.mask{
+    font-size:10px;
+    opacity:0;
+    position:absolute;
+    top:0;
+  color:white;
+  
+  width:100px;
+  height:50px;
+  border-radius:20px 5px 5px 5px /20px 5px 5px 5px ;
+}
+.mask:hover{
+    opacity:1;
+    transition:all 0.6s;
+}
+.page3 a{
+    width:120px;
+    height:80px;
+    margin-left:20px;
+    margin-bottom:40px;
+    border-radius:20px 5px 5px 5px /20px 5px 5px 5px ;
+    text-align:center;
+    
+    color: white;
+    vertical-align: middle;
+   
+    font-size:20px;
+    position:relative;
+    display:inline-block;
+}
+.boxes{
+        margin-left:0px;
+        margin-right:0px;
+}
+
+.page3 a:hover{
+    transition: all 0.3s;
+    transform: scale(1.1,1.1);
+    opacity:1;
+}
+.box1{
+    background:linear-gradient(skyblue,aquamarine 99%);
+}
+.box2{
+    background:linear-gradient(orange,pink 99%);
+}
+.box3{
+    background:linear-gradient(limegreen,lightgreen 99%);
+}
+.box4{
+    background:linear-gradient(palevioletred,lightpink 99%);
+}
+.box5{
+    background:linear-gradient(mediumorchid,thistle 99%);
+}
+.box6{
+    background:linear-gradient(steelblue,powderblue 99%);
+}
+
+.box8{
+    background:linear-gradient(peru,gold 99%);
+}
+.box7{
+     background:linear-gradient(gray,gainsboro 99%);
+}

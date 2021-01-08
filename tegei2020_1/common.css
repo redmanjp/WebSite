@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+body {
+    font-size: 15px;
+    font-family: 'Avenir', 'Arial Black', 'Osaka', 'MP Pゴシック', sans-serif;
+    
+    margin:0;
+}
+
+/*=====================================*/
+/*Tegei*/
+.oya {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+     max-width: 100%;
+    
+}
+
+.ko {
+    position: absolute;
+    color: white;
+
+    width: 1600px;
+   
+
+    opacity: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 100%;
+    top: 0px;
+}
+
+.blackbox {
+    width: 800px;
+    height: 750px;
+
+    background: black;
+   
+
+    
+    filter:alpha(opacity=80); /* IE 6,7*/
+-ms-filter: "alpha(opacity=80)"; /* IE 8,9 */
+-moz-opacity:0.8; /* FF , Netscape */
+-khtml-opacity: 0.8; /* Safari 1.x */
+opacity:0.8;
+zoom:1; /*IE*/
+    
+    
+    margin: 0 auto;
+    margin-top: 70px;
+    max-width: 100%;
+}
+
+/*=====================================*/
+.activity {
+    border: 1px solid white;
+
+    width: 200px;
+    padding: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+
+    width: 650px;
+    padding: 13px;
+
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+   
+}
+
+.bottom {
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    font-size:14px;
+}
+
+/*=====================================*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.atitle {
+    color: black;
+    text-decoration: underline;
+}
+
+/*index手芸======*/
+.img1 {
+    filter: brightness(150%);
+    filter: saturate(250%);
+    width: 2000px;
+    height: 70px;
+    object-fit: cover;
+    max-width:100%;
+    object-position: 50% 50%;
+    vertical-align: bottom;
+   
+   
+}
+
+/*index黒=========*/
+.img2 {
+   
+    filter: brightness(100%);
+    filter: saturate(175%);
+    width: 1600px;
+    height: 500px;
+    object-fit: cover;
+    max-width: 100%;
+   
+    
+}
+
+
+/*=====================================*/
+/*=====================================*/
+.img3 {
+    filter: brightness(40%);
+    width: 1600px;
+    height: 30px;
+    object-fit: cover;
+    max-width: 100%;
+    
+}
+
+.title {
+   
+    width: 200px;
+    max-width: 100%;
+    font-size: 20px;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    
+}
+
+/*=====================================*/
+/*|*/
+.title2 {
+    border-left: 10px solid red;
+   margin-left:-10px;
+  
+    
+}
+
+/*|*/
+.matome {
+    border-left: 1px solid black;
+    margin-left: 20px;
+    padding-left: -20px;
+    padding: 20px;
+    
+}
+
+.content {
+    padding-left: 10px;
+}
+
+
+   .im{
+        width:300px;
+        height:170px;
+    }
+@media screen and (min-width:768px) {
+    .content {
+    padding-left: 100px;
+    
+} 
+    .im{
+        width:400px;
+        height:230px;
+    }
+    iframe{
+        width:600px;
+        height:890px;
+    }
+}
+
+
+.little {
+    
+    color: gray;
+}
+
+.report{
+    color:black;
+    font-size:17px;
+}
+.index{
+    color:black;
+    padding-left:150px;
+    padding-right:150px;
+}
+.back{
+    color:black;
+    font-size:17px;
+    float:right;
+    padding-right:50px;
+     padding-top:20px;
+   
+    
+}
+.ctext{
+     margin-left: auto;
+    margin-right: auto;
+     text-align: center;
+    
+}

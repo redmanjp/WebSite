@@ -1,0 +1,415 @@
+@charset "utf-8";
+
+body{
+    margin:0;
+    font-family:sans-serif;
+    font-size:20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.small_text{
+    color:white;
+    text-align:center;
+    font-size:20px;
+}
+/*TOP--------------------------------------*/
+.top{
+    display:block;
+    position:fixed;
+    bottom:0;
+    right:0;
+    padding:10px;
+    text-align:center;
+    font-weight: bold;
+    margin:10px;
+    background:linear-gradient(greenyellow,green 99%);
+    border-radius: 10px;
+    z-index: 1;      
+    color:white;
+}
+.top:hover{
+    transition: all 0.3s;
+    transform: scale(1.1,1.1);
+}
+/*ロード画面ー----------------------------------------*/
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+  .liner {
+    width: 100px;
+    height: 2px;
+    margin-top: 500px;
+    background:linear-gradient(90deg,skyblue,greenyellow);;
+    animation: sk-scaleout 2s infinite ease-in-out;
+  }
+  @keyframes sk-scaleout {
+    0% {
+      width:0;
+    } 100% {
+      width:100%;
+    }
+  }
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+    
+/*文字移動-------------------------*/
+.element[data-emergence=hidden] {
+         opacity:0;
+         transform:scale(0.85);
+}
+.element[data-emergence=visible] {
+    transition: all 0.8s;
+    transform:scale(1);
+         opacity:1;
+}
+/*セクション-------------------------*/
+section{
+    height:800px;
+    position:relative;
+}
+/*セクション1-------------------------*/
+
+
+    .page1 h1 {
+        animation: hurueru 0.6s  infinite;
+        
+    }
+    
+
+    
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(0.5deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-0.5deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+.title2{
+    color:white;
+    font-weight: normal;
+    width:100%;
+    font-size:60px;
+    margin-top:200px;
+   
+    position:absolute;
+    text-align:center;
+}
+#title{
+    position:absolute;
+    text-align:center;
+    display:block;
+    width:99%;
+    top:300px;
+    font-size:100px;
+    margin-top:10px;
+    background: -webkit-linear-gradient(greenyellow,skyblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+       
+.tegei{
+    position:relative;
+    font-size:60px;
+}
+.tegei2{
+    left:-8px;
+    position:absolute;
+    font-size:30px;
+    
+    background: -webkit-linear-gradient(red,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*セクション2-------------------------*/
+
+.pamp{
+    width:200px;
+    color:black;
+    border:black solid 1px;
+    display:block;
+   margin:50px auto;
+   text-align:center;
+}
+.pamp:hover{
+    background-color:rgb(233, 233, 233);
+    color:gray;
+}
+.page2{
+    height:900px;
+}
+@media screen and (max-width: 630px) and (min-width: 481px){
+    /* 959px以下に適用されるCSS（タブ*/
+    .page2{
+        height:1100px;
+    }
+}
+/*セクション3-------------------------*/
+
+
+
+img{
+    width:200px;
+    float:left;
+    margin:0px;
+   
+    margin-right:50px;
+    border-radius: 50px;;
+}
+/*セクション4-------------------------*/
+
+iframe{
+    width:560px;
+    height:315px;
+    display:block;
+   margin:50px auto;
+   border:groove white 5px;
+}
+
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブ*/
+    .page3{
+        height:900px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    /* 959px以下に適用されるCSS（タブ*/
+    .page3{
+        height:1600px;
+    }
+}
+
+.horizontal-list {
+    margin-top:20px;
+    margin-left:8%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+/*セクション5-------------------------*/
+.item {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 400px;
+    border-radius:40px 5px 5px 5px /40px 5px 5px 5px ;
+   
+    text-align:center;
+    /* 見た目調整 */
+    height: 400px;
+    margin: 15px;
+    font-size: 20px;
+    background: white;
+   vertical-align:bottom;
+
+  }
+
+li{
+    text-align:left;
+    }
+    .mini{
+        font-size:15px;
+        color:gray;
+    }
+    .number{
+        margin-top:10px;
+       font-size:30px;
+        background:linear-gradient(orange,lightpink 99%);
+        border-radius: 30px;
+        width:120px;
+        color:white;
+        position:relative;
+        left:150px;
+        font-weight:bold;
+    }
+    
+    .number2{
+        margin-top:10px;
+        font-size:30px;
+        background:linear-gradient(skyblue,aquamarine 99%);
+        border-radius: 30px;
+        width:180px;
+        color:white;
+        position:relative;
+        left:175px;
+        font-weight:bold;
+    }
+    
+
+  /*セクション6-------------------------*/
+  .item2 {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 500px;
+
+
+    border-radius:40px 5px 5px 5px /40px 5px 5px 5px ;
+    text-align:center;
+    /* 見た目調整 */
+    height: 300px;
+    margin: 20px;
+    
+    font-size:20px;
+    background: white;
+    vertical-align:bottom;
+  }
+
+.copyright{
+    text-align:center;
+    margin-top:100px;
+    
+    background-color:white;
+}
+
+/*セクション色-------------------------*/
+.page1{
+    background:linear-gradient(rgba(1, 17, 22, 0.856),black 120%);
+}
+.page2{
+    background-color:#c9c9c9;
+}
+.page3{
+    background-color:rgb(233, 233, 233);
+}
+.page4{
+    background-color:black;
+}
+.page5{
+    background-color:rgb(200, 219, 221);
+}
+.page6{
+    background-color:gainsboro;
+}
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+タイトル2--------------------------------------*/
+h1{
+    margin-top:0;
+    color:white;
+    font-size:80px;
+    text-align:center;
+}
+.h1_Title{
+    border-left: solid 3px greenyellow;
+}
+.h2_smallTitle{
+    border-left: solid 3px white;
+}
+.h3_smallTitle{
+    border-left: solid 3px palevioletred;
+}
+.h4_smallTitle{
+    border-left: solid 3px orange;
+}
+.h5_smallTitle{
+    border-left: solid 3px skyblue;
+}
+
+/*----------------------------------------*/
+
+.p2{
+    padding-left:20%;
+    padding-right:20%;
+}
+
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブ*/
+	.p2{
+        padding-left:50px;
+        padding-right:50px;
+    }
+}
+
+/*BOX チーム----------------------------------------*/
+
+.mask{
+    font-size:15px;
+    opacity:0;
+    position:absolute;
+    top:0;
+  color:white;
+  width:250px;
+  height:130px;
+  border-radius:40px 5px 5px 5px /40px 5px 5px 5px ;
+}
+.mask:hover{
+    opacity:1;
+    transition:all 0.6s;
+}
+.page3 a{
+    width:250px;
+    height:130px;
+    margin-left:40px;
+    margin-bottom:30px;
+    border-radius:40px 5px 5px 5px /40px 5px 5px 5px ;
+    text-align:center;
+    
+    color: white;
+    vertical-align: middle;
+   
+    font-size:40px;
+    position:relative;
+    display:inline-block;
+}
+.boxes{
+        margin-left:200px;
+        margin-right:200px;
+}
+
+
+@media screen and (max-width: 1300px) {
+	.boxes{
+        margin-left:0px;
+        margin-right:0px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+	.boxes{
+        margin-left:50px;
+        margin-right:0px;
+    }
+}
+.page3 a:hover{
+    transition: all 0.3s;
+    transform: scale(1.1,1.1);
+    opacity:1;
+}
+.box1{
+    background:linear-gradient(skyblue,aquamarine 99%);
+}
+.box2{
+    background:linear-gradient(orange,pink 99%);
+}
+.box3{
+    background:linear-gradient(limegreen,lightgreen 99%);
+}
+.box4{
+    background:linear-gradient(palevioletred,lightpink 99%);
+}
+.box5{
+    background:linear-gradient(mediumorchid,thistle 99%);
+}
+.box6{
+    background:linear-gradient(steelblue,powderblue 99%);
+}
+
+.box8{
+    background:linear-gradient(peru,gold 99%);
+}
+.box7{
+     background:linear-gradient(gray,gainsboro 99%);
+}
