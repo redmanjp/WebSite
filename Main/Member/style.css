@@ -7,12 +7,20 @@ body {
     background: rgb(99, 148, 42);
 }
 
-.nav {
+header {
     background: rgb(0,0,0, 0.5);
     display: flex;
     justify-content: space-evenly; 
     align-items: center;
     margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 100px;
+    background: rgb(0,0,0,0.3);
+    color: bisque;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .member{
