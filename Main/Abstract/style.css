@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-width: 360px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 60px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    line-height: 300px;
+}
+
+@media screen and (max-width:700px) {
+    h1 {
+        font-size: 50px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.page-header {
+    height: 300px;
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    border-bottom: solid 3px;
+    /*集中線*/
+    background-image: repeating-conic-gradient(transparent,
+            transparent 15deg,
+            #3aacad 15deg,
+            #F0FFF0 18deg),
+        repeating-conic-gradient(transparent,
+            transparent 22deg,
+            #F0FFF0 22deg,
+            #F0FFF0 24deg),
+        repeating-conic-gradient(transparent,
+            transparent 6deg,
+            #F0FFF0 6deg,
+            #F0FFF0 8deg);
+    /*集中線*/
+}
+
+@media screen and (max-width:700px) {
+    .page-header .main-nav{
+        height: 300px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.page-header .main-nav {
+    display: flex;
+    font-size: 1rem;
+    list-style: none;
+}
+
+
+@media screen and (max-width:700px)  {
+    .page-header .main-nav {
+        font-size: 15px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.page-header .main-nav li {
+    margin-left: 40px;
+}
+.page-header .main-nav a {
+    color: blue;
+}
+
+.page-header .main-nav a:hover {
+    color: crimson;
+}
+
+.image img {
+    width: 90px;
+    height: 90px;
+    margin: -5px auto 5px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*animation marker*/
+.inner {
+    background-image: linear-gradient(90deg,
+            #fff87e 50%,
+            transparent 50%);
+    background-position: 100% 0%;
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    transition: background-position .5s ease-out;
+}
+
+.marker:hover .inner {
+    background-position: 0% 0%;
+}
+
+/*animation marker*/
+.inf {
+    margin: 20 auto;
+    text-align: center;
+    display: block;
+}
+
+.inf .text {
+    text-align: left;
+    display: inline-block;
+    width: 360px;
+    line-height: 3;
+}
+
+.box {
+    width: 80%;
+    padding: 0.5em 1em;
+    margin: 30px auto;
+    max-width: 500px;
+    color: #474747;
+    background: whitesmoke;
+    border-left: double 7px #4ec4dc;
+    border-right: double 7px #4ec4d3;
+}
+
+.box .text {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    line-height: 2.7;
+}
+
+.column {
+    display: flex;
+    text-align: center;
+}
+
+.title-box {
+    margin: 5em 20%;
+    padding: 1.5em 2em 1em;
+    position: relative;
+    border: 1px solid #81d4fa;
+    background-color: #e1f5fe;
+}
+
+.title-box-title {
+    position: absolute;
+    top: -1.8em;
+    left: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #0000FF;
+    color: #fff;
+    padding: 0 0.5em;
+}
+
+.title-box p {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+
+.set {
+    display: inline-block;
+    color: white;
+}
+
+.back {
+    text-align: center;
+    background-color: black;
+    height: auto;
+    color: white;
+}
+
+dl {
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+dl dt {
+    float: left;
+    text-align: right;
+    width: 50%;
+}
+dl dd {
+    text-align: left;
+    width: 50%;
+}
+h4 {
+    margin-bottom: 30px;
+}
