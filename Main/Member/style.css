@@ -166,6 +166,33 @@ footer {
     transform: translate3d(0, 0, 0);
 }
 
+#modal-bg {
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+}
+
+#modal-main {
+    position: fixed;
+    text-align: center;
+    display: none;
+    width: 50%;
+    height: auto;
+    max-height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 10px 30px 20px;
+    background-color: #fff;
+    color: #666;
+    z-index: 9999;
+    cursor: default;
+}
+
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
 
 @media (min-width:1201px) {

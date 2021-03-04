@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./js/member_modal.js"></script>
 </head>
 
 <body>
@@ -15,19 +17,35 @@
     <a href="../HP/" style="color: white;">Home</a>
   </header>
   <main>
+    <!-- modal window -->
+    <div id="modal-main">
+      <h1 id="hn">名前</h1>
+      <div id="user_info">
+        <h3 id="grade">grade</h3>
+        <h3 id="job">job</h3>
+        <h3 id="comment">comment</h3>
+      </div>
+    </div>
     <ul id="hexGrid">
+      <!-- Users -->
       <li class="hex">
         <div class="hexIn">
-          <a class="hexLink" href="#">
+          <a class="hexLink" href="#" id="roku">
             <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" />
-            <h2>member1</h2>
+            <h2 class="name">ろく</h2>
+            <div class="grade">2</div>
+            <div class="job">programmer</div>
+            <div class="comment">よろしく！</div>
           </a>
         </div>
       </li>
       <li class="hex">
         <div class="hexIn">
-          <a class="hexLink" href="#">
-            <h2>member2</h2>
+          <a class="hexLink" href="#" id="m2">
+            <h2 class="name">member2</h2>
+            <div class="grade">3</div>
+            <div class="job">graphicer</div>
+            <div class="comment">hello</div>
           </a>
         </div>
       </li>
@@ -44,24 +62,6 @@
           <a class="hexLink" href="#">
             <img src="https://farm8.staticflickr.com/7163/6822904141_50277565c3.jpg" alt="" />
             <h2>member4</h2>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#">
-            <img src="https://farm4.staticflickr.com/3771/13199704015_72aa535bd7.jpg" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#">
-            <img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
           </a>
         </div>
       </li>
