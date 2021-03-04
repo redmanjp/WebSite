@@ -1,0 +1,146 @@
+/*
+color
+255 255 160 white
+121 222 214 blue
+255 58 58 red
+*/
+
+a {
+    text-decoration: none;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 3%;
+    background: url(bg.png);
+}
+
+h1,
+h2,
+h4 {
+    color: rgb(255, 255, 160);
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+small {
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+div,
+img {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    display: block;
+}
+
+.Foot {
+    background-color: rgb(255, 58, 58);
+}
+
+.Title {
+    background-color: rgb(255, 58, 58);
+    color:rgb(255, 255, 160);
+    box-shadow: 5px 5px 0 0 black;
+    padding-top: 0;
+}
+
+.Return {
+    border: 4px rgb(255, 255, 160) solid;
+}
+
+.Head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Room {
+    border: 16px rgb(0,0,0) solid;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.stateT,
+.stateF {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border: 3px rgb(0,0,0) solid;
+    box-sizing: border-box;
+}
+
+.stateT {
+    background-color: rgb(255,255,160);
+}
+
+.stateF {
+    background-color: rgb(91,90,57);
+}
+
+.stimg {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+#State {
+    width: 5%;
+}
+
+#Pictures {
+    position: relative;
+    padding: 0;
+    width: 95%;
+}
+
+#Picture {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+#bt_m,
+#bt_p {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 100, 0, 127);
+    opacity: 0.1;
+    transition: 1s;
+    z-index: 2;
+    width: 15%;
+    height: 100%;
+    top: 0;
+}
+#bt_m {
+    background: linear-gradient(to right,black,transparent);
+    left: 0;
+}
+#bt_p {
+    background: linear-gradient(to left,black,transparent);
+    right: 0;
+}
+
+#bt_m:hover,
+#bt_p:hover{
+    opacity: 0.5;
+    transition: 1s;
+}
