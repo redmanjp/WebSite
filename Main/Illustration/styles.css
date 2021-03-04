@@ -1,0 +1,30 @@
+h1{
+  text-align: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 50px;
+}
+h2{
+  text-align: center;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.box-row1 {
+  text-align: center;
+}
+.box-row2 {
+  text-align: center;
+}
+.box-row3 {
+  text-align: center;
+}
+
+.fixed_btn
+{
+  text-align: center;
+  color:cyan;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 20px;
+  position: fixed;
+  bottom: 30px; 
+  right: 30px;
+  padding: 6px 40px;
+}
