@@ -32,7 +32,8 @@ $(function () {
         modalResize();
 
         //モーダルウィンドウを表示
-        $("#modal-bg,#modal-main").fadeIn("slow");
+        $("#modal-main").fadeIn("slow");
+        $("#modal-bg").fadeIn("slow");
 
         //スクロール一の初期化
         $("#modal-main").scrollTop(0);
@@ -43,10 +44,10 @@ $(function () {
             $("#modal-main,#modal-bg").fadeOut("slow", function () {
                 //閉じると同時に内容をすべてクリアして初期化する役割も担わせる
                 $('#modal-bg').remove();
-                $("#hn").text();
-                $("#grade").text();
-                $("#job").text();
-                $("#comment").text();
+                // $("#hn").text();
+                // $("#grade").text();
+                // $("#job").text();
+                // $("#comment").text();
             });
         });
         //画面の左上からmodal-mainの横幅・高さを引き、その値を2で割ると画面中央の位置が計算できます
