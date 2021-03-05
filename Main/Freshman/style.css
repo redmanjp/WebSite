@@ -1,0 +1,743 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Reggae One", cursive;
+  font-size: 16px;
+
+  background: url("metal1.jpg");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+
+  padding: 20px;
+
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.title {
+  font-family: "DotGothic16";
+  font-size: 2.5em;
+
+  overflow: hidden;
+
+  width: 500px;
+  height: 150px;
+  margin: 0 10px;
+
+  border: 10px gray ridge;
+  background: black;
+}
+
+.title div {
+  font-size: 2em;
+
+  animation: title 10s linear infinite;
+
+  color: rgb(255, 255, 224);
+  background: black;
+  text-shadow: 0 0 30px white;
+}
+.metal {
+  box-shadow: 0 0 200px rgb(75, 42, 42), 0 0 50px black;
+}
+@keyframes title {
+  0% {
+    transform: translateX(100%);
+  }
+  45% {
+    transform: translateX(10%);
+  }
+  55% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+footer {
+  line-height: 50px;
+
+  width: 100px;
+  height: 300px;
+  margin: 0 10px;
+
+  text-align: center;
+  -ms-writing-mode: tb-rl;
+
+  color: black;
+  border-radius: 30px;
+  background: url("metal1.jpg");
+  box-shadow: inset 2px 2px 10px 5px black;
+
+  writing-mode: vertical-rl;
+}
+.flayer p {
+  font-size: 0.49em;
+}
+.flayer a {
+  font-size: 0.8em;
+
+  display: block;
+
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  padding: 10px;
+
+  color: rgba(6, 238, 255, 0.3);
+  border: solid rgb(33, 33, 33) 5px;
+  border-radius: 50%;
+  background: radial-gradient(blue, black);
+  box-shadow: 1px 1px 20px 5px black;
+}
+.flayer a:hover {
+  background: radial-gradient(white, blue, black);
+}
+.termi {
+  font-family: "DotGothic16";
+  font-size: 1.2em;
+
+  overflow: scroll;
+
+  width: 600px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+
+  animation: termi 2s infinite alternate;
+
+  color: rgb(3, 182, 3);
+  border: 10px gray ridge;
+  background: black;
+}
+
+@keyframes termi {
+  0% {
+    text-shadow: 1.5px 1.5px 0 rgba(0, 238, 255, 0.7);
+  }
+  100% {
+    text-shadow: -0 -0 0 rgba(184, 249, 184, 0.7);
+  }
+}
+.termi span:before {
+  content: "TegeiDoukoukai:~ tegei$ ";
+
+  color: skyblue;
+}
+
+ul.plan {
+  position: relative;
+
+  display: black;
+  overflow: hidden;
+
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: white;
+  box-shadow: inset 0 0 20px black;
+}
+.plan::before,
+.plan::after {
+  font-size: 7em;
+  line-height: 300px;
+
+  position: absolute;
+  top: 0;
+
+  width: 50%;
+  height: 100%;
+
+  transition: 1s;
+  text-align: center;
+
+  color: white;
+  background: url("metal1.jpg");
+  box-shadow: 0 0 10px black;
+  box-shadow: inset 2px 2px 10px 5px black;
+}
+.plan:before {
+  left: 0;
+
+  content: "日";
+}
+
+.plan:after {
+  right: 0;
+
+  content: "程";
+}
+.warning_box {
+  font-size: 7em;
+
+  position: relative;
+  top: 0;
+  right: 0;
+
+  overflow: hidden;
+
+  width: 300px;
+  height: 300px;
+
+  text-align: center;
+
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px 10px black;
+}
+.warning_box::before {
+  font-size: 0.8em;
+  line-height: 300px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: "押すな";
+
+  color: rgb(255, 124, 124);
+  background: url("metal1.jpg");
+  box-shadow: inset 2px 2px 10px 5px black;
+}
+.warning_box::before {
+  top: 0;
+
+  transition: 0.7s all;
+}
+
+.warning_box:hover:before {
+  top: -100%;
+}
+
+.plan:hover::after {
+  right: -50%;
+}
+
+.plan:hover:before {
+  left: -50%;
+}
+.kuru1 {
+  position: relative;
+
+  display: inline-block;
+
+  width: 100px;
+  height: 100px;
+
+  animation: kuru1 infinite linear 1s;
+
+  border: black solid 10px;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+.kuru1::before {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+
+  width: 50px;
+  height: 50px;
+
+  content: "";
+  animation: kuru2 infinite linear 0.5s;
+
+  border-right-color: transparent;
+  border-radius: 50%;
+  background: linear-gradient(
+    to left,
+    #333 40%,
+    transparent 41%,
+    transparent 59%,
+    #333 60%
+  );
+}
+.kuru1::after {
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+
+  content: "";
+  animation: kuru infinite linear 1.2s;
+
+  border: gray solid 10px;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+.kuru2 {
+  position: absolute;
+
+  display: inline-block;
+
+  width: 100px;
+  height: 100px;
+
+  content: "";
+  animation: kuru2 infinite linear 1.2s;
+
+  border: white solid 40px;
+  border-right-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 10px white;
+}
+@keyframes kuru1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes kuru2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.graph1,
+.graph2,
+.graph3 {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+
+  animation: graph infinite ease-in 0.5s alternate;
+
+  background: white;
+  box-shadow: 0 0 10px white;
+}
+.graph2 {
+  animation-delay: 0.4s;
+}
+.graph3 {
+  animation-delay: 0.8s;
+}
+h2 {
+  font-size: 4em;
+
+  display: inline-blck;
+
+  width: 100%;
+
+  text-align: center;
+
+  color: rgb(77, 77, 77);
+}
+@keyframes graph {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 250px;
+  }
+}
+.light {
+  position: relative;
+
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+
+  border-radius: 50%;
+  background: radial-gradient(
+    rgb(16, 16, 16) 40%,
+    transparent 41%,
+    transparent 50%,
+    black 90%
+  );
+}
+.light::before {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+
+  width: 30px;
+  height: 30px;
+
+  content: "";
+
+  border-radius: 50%;
+}
+.li1::before {
+  animation: light1 infinite ease-in 0.5s alternate;
+}
+@keyframes light1 {
+  from {
+    box-shadow: 0 0 10px 0 white;
+  }
+  to {
+    box-shadow: 0 0 10px 30px white;
+  }
+}
+
+.li2::before {
+  animation: light2 infinite ease-in 0.5s alternate;
+}
+@keyframes light2 {
+  from {
+    box-shadow: 0 0 10px 0 red;
+  }
+  to {
+    box-shadow: 0 0 10px 30px red;
+  }
+}
+.clock {
+  font-size: 3em;
+
+  position: relative;
+
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+
+  border: 10px gray ridge;
+  border-radius: 50%;
+  background: url("clock.png");
+  background-size: 180px;
+}
+.clock .hari {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+
+  width: 5px;
+  height: 80px;
+
+  transform-origin: bottom;
+  animation: clock 0.3s infinite alternate;
+
+  background: red;
+}
+
+.clock:nth-child(2) .hari {
+  animation-delay: 0.1s;
+}
+@keyframes clock {
+  0% {
+    transform: rotate(-100deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
+}
+.tape1 {
+  width: 250px;
+  height: 240px;
+  margin: 30px 30px;
+}
+.tape2 {
+  width: 250px;
+  height: 250px;
+
+  transform-origin: center;
+  animation: tape2 2s infinite linear;
+
+  border: solid rgb(34, 34, 34) 50px;
+  border-radius: 50%;
+}
+.tape .t {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 140px);
+
+  width: 280px;
+  height: 20px;
+
+  border: solid gray 5px;
+  background: rgb(0, 0, 0);
+}
+.tape .t:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.tape .t:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.tape .t:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.tape .t:nth-child(4) {
+  transform: rotate(135deg);
+}
+.tape .tape_circle {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  background: radial-gradient(gray, black);
+}
+
+.tape .tape_circle::before {
+  position: absolute;
+  z-index: 100;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+
+  width: 50px;
+  height: 50px;
+
+  content: "";
+
+  border-radius: 50%;
+  background: gray;
+}
+
+.tape .tape_circle::after {
+  position: absolute;
+  z-index: 100;
+  top: calc(50% - 20px);
+  left: calc(50% - 7px);
+
+  width: 15px;
+  height: 40px;
+
+  content: "";
+  animation: kuru2 infinite linear 1.2s;
+
+  border-radius: 50%;
+  background: rgb(41, 41, 41);
+}
+@keyframes tape2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.work {
+  width: 500px;
+  height: 500px;
+
+  border: 5px solid black;
+  border-radius: 20%;
+}
+.screen {
+  width: 350px;
+  height: 300px;
+  margin: 10px;
+
+  color: white;
+  border: gray ridge 10px;
+  background: black;
+}
+canvas {
+  border: gray ridge 10px;
+  border-radius: 50%;
+}
+.warning_box2 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+
+  border: ridge gray 10px;
+  border-radius: 30px;
+  background: linear-gradient(
+    to top right,
+    black 10%,
+    yellow 11%,
+    yellow 20%,
+    black 21%,
+    black 30%,
+    yellow 31%,
+    yellow 40%,
+    black 41%,
+    black 50%,
+    yellow 51%,
+    yellow 60%,
+    black 61%,
+    black 70%,
+    yellow 71%,
+    yellow 80%,
+    black 81%,
+    black 90%,
+    yellow 91%
+  );
+}
+.back {
+  font-size: 3em;
+  line-height: 180px;
+
+  display: block;
+
+  width: 200px;
+  height: 200px;
+
+  animation: back 1s ease-in-out infinite;
+  text-align: center;
+  text-decoration: none;
+
+  color: white;
+  border: gray 10px ridge;
+  border-radius: 50%;
+  background: url("metal1.jpg");
+}
+@keyframes back {
+  0% {
+    transform: rotate(-45deg);
+  }
+  20% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+.termi_b1 {
+  background: radial-gradient(red, black);
+}
+.termi_b1:hover {
+  background: radial-gradient(white, red, black);
+}
+
+.termi_b2 {
+  background: radial-gradient(blue, black);
+}
+.termi_b2:hover {
+  background: radial-gradient(white, blue, black);
+}
+
+.termi_b3 {
+  background: radial-gradient(green, black);
+}
+
+.termi_b3:hover {
+  background: radial-gradient(white, green, black);
+}
+.warning_box input {
+  font-size: 0.5em;
+
+  color: rgba(255, 2155, 255, 0.8);
+}
+.warning_box2::after {
+  z-index: 100;
+
+  background: red;
+}
+.flayer {
+  font-size: 2em;
+
+  position: relative;
+  z-index: 2;
+
+  width: 300px;
+  height: 300px;
+  margin: 0 10px;
+  padding: 5px;
+
+  text-decoration: none;
+
+  color: rgb(255, 255, 255);
+  border: gray 10px ridge;
+}
+.flayer:hover flayerme {
+  transform: translateY(300px);
+}
+.warning_button {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+
+  border: solid black 10px;
+  border-radius: 50%;
+  background: radial-gradient(red, black);
+}
+.warning_button:hover {
+  background: radial-gradient(white, red, black);
+}
+.termi_button {
+  bottom: 50px;
+  left: 100px;
+
+  display: flex;
+
+  width: 100px;
+  height: 300px;
+  margin: 10px;
+
+  border: ridge gray 5px;
+  border-radius: 30px;
+  background: url("metal1.jpg");
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.termi_button input {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+
+  border: solid rgb(33, 33, 33) 5px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px 0 black;
+}
+.keybord {
+  display: flex;
+
+  width: 210px;
+  height: 300px;
+  margin: 10px;
+
+  border: ridge gray 10px;
+  background: black;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.keybord div {
+  width: 40px;
+  height: 40px;
+  margin: 15px 8px 8px 8px;
+
+  border-radius: 30%;
+  background: gray;
+}
+.para {
+  display: flex;
+
+  width: 180px;
+  height: 300px;
+  margin: 10px;
+
+  border: ridge gray 10px;
+  background: black;
+  box-shadow: 5px 5px 10px gray;
+
+  flex-wrap: wrap;
+}
+.para div {
+  width: 120px;
+  height: 20px;
+  margin: 9.5px auto;
+
+  border-radius: 15px;
+  background: gray;
+}

@@ -1,0 +1,41 @@
+body{
+  //display: flex;
+  background-color: black;
+}
+h1{
+  margin-left: 10%;
+  margin-right: 10%;
+  color:white;
+  font-size: 30px;
+  font-family: 'DotGothic16', sans-serif;
+}
+p{
+  color: white;
+}
+h2{
+  display: flex;
+  color:white;
+  font-size: 30px;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.pic{
+  margin: 0 auto; 
+}
+.command{
+  margin-right: 10%;
+}
+<a>{
+  color: white;
+}
+h3{
+  margin-left: 10%;
+  margin-right: 10%;
+  color:white;
+  font-size: 30px;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+small{
+  color: white;
+}

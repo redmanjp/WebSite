@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>会津大学　手芸同好会</title>
+    <link rel = "stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>
+      <!-これは枠線->
+      <div style="-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: white solid 3px; font-size: 100%; padding: 20px;">
+      Web班　紹介ページへ　ようこそ。 <br>
+      成果物を　展示しています。 <br>
+  </h1>
+  <h2>
+    <div class="pic">
+      <img id="mypic" onclick="slideshow()" src="1.jpg" width="500" height="500">
+      <script>
+      var pics_src = new Array("1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg");
+      var num = 0;
+
+      function slideshow(){ 
+         if (num == 6) {
+              num = 0;
+          }
+          else {
+              num ++;
+          }
+
+          document.getElementById("mypic").src=pics_src[num];
+
+      }
+      </script>
+    </div>
+  </div>
+
+   <div class = "command">
+<div style="-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: white solid 3px; font-size: 100%; padding: 20px;">
+    画像　クリック<br>
+    すると<br>
+    切り替わるよ。<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="../HP/">ホームにもどる</a><br>
+   </div>
+  </div>
+  </h2>
+
+<h3>
+  <div style="-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: white solid 3px; font-size: 100%; padding: 20px;">
+    HTML、 CSS, JavaScript を 勉強するよ。 <br>
+    UI　や　デザイン　についても　勉強するよ。<br> 
+    ブラウザで　動く　アプリ　や　ゲーム　も　作れるよ。　<br>
+    </div>
+  </h3>
+    
+
+  </body>
+  <small>&copy; 2021 手芸同好会　　製作者：Suzuki</small>
+</html>

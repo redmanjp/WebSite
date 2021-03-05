@@ -1,0 +1,25 @@
+body {
+  font-size: 14px;
+}
+h2 {
+  font-size: 1.8em;
+}
+.consult {
+  font-size: 0.95em;
+}
+h1 {
+  font-size: 0.9em;
+}
+.card1,
+.card2,
+.card3 {
+  margin: 50px 10px;
+}
+.consult {
+  width: 90%;
+  height: 200px;
+  padding: 20px;
+}
+.box {
+  margin-bottom: 0;
+}
