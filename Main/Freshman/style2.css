@@ -1,0 +1,46 @@
+.back {
+  line-height: 130px;
+
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}
+.light {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}
+.title div {
+  font-size: 1.5em;
+}
+.title {
+  height: 100px;
+}
+body {
+  font-size: 13px;
+}
+.container {
+  overflow: hidden;
+}
+.clock {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+
+  background-size: 130px;
+}
+.screen {
+  margin: 0;
+}
+.clock .hari {
+  height: 50px;
+}
+.container {
+  padding: 2px;
+}
+footer {
+  margin: 10px;
+}
+.termi_button {
+  margin: 0;
+}

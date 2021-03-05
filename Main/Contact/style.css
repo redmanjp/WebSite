@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.back {
+  font-size: 1.5em;
+
+  display: block;
+
+  margin-top: 60px;
+
+  text-align: center;
+}
+.box {
+  text-align: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  margin: 30px 0;
+
+  justify-content: center;
+}
+.card1,
+.card2,
+.card3 {
+  display: inline-block;
+
+  width: 200px;
+  height: 300px;
+  margin: 30px;
+
+  transition: 0.3s all;
+
+  border-radius: 10px;
+  vertical-align: top;
+}
+.box ul {
+  white-space: normal;
+  list-style-position: inside;
+}
+ul {
+  list-style-type: circle;
+}
+.consult li {
+  margin-left: 1.4em;
+
+  text-indent: -1.4em;
+}
+.card2 rect {
+  transition: 0.3s all;
+}
+.card3 rect {
+  transition: 0.3s all;
+}
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  transform: scale(1.05);
+}
+.card1:hover .hand {
+  transform: rotate(90deg);
+}
+.card2:hover rect {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.card3:hover rect {
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.hand {
+  overflow: visible;
+
+  width: 100px;
+  height: 200px;
+  margin: 0 50px 0 50px;
+
+  transition: 0.3s all;
+  animation: flash 5s ease-in-out 0s alternate infinite;
+
+  stroke-width: 50px;
+  fill: none;
+  filter: drop-shadow(-10px -10px 10px rgba(55, 255, 0, 0.6))
+    drop-shadow(-10px 10px 10px rgba(72, 255, 0, 0.6))
+    drop-shadow(10px -10px 10px rgba(0, 255, 13, 0.6))
+    drop-shadow(10px 10px 10px rgba(60, 255, 0, 0.6));
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0.3;
+  }
+  52% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 0.6;
+  }
+  77% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 0.3;
+  }
+  79% {
+    opacity: 1;
+  }
+}
+.hand path {
+  stroke: rgb(94, 255, 0);
+}
+body {
+  font-family: "Raleway", "Noto Sans JP", sans-serif;
+  font-size: 16px;
+
+  color: white;
+  background: black;
+}
+
+.youtube {
+  overflow: visible;
+
+  width: 140px;
+  height: 200px;
+  margin: 0 30px 0 30px;
+
+  animation: flash 5s ease-in-out 2s alternate infinite;
+
+  filter: drop-shadow(-10px -10px 10px rgba(255, 0, 0, 0.7))
+    drop-shadow(-10px 10px 10px rgba(255, 0, 0, 0.7))
+    drop-shadow(10px -10px 10px rgba(255, 0, 0, 0.7))
+    drop-shadow(10px 10px 10px rgba(255, 0, 0, 0.7));
+}
+.youtube path {
+  animation: twitter 5s 1.5s linear infinite;
+
+  stroke: white;
+  stroke-width: 10px;
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+}
+.youtube rect {
+  stroke: rgb(255, 149, 250);
+  stroke-width: 10px;
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+}
+.hand path {
+  stroke: rgb(0, 255, 98);
+  stroke-width: 3px;
+}
+
+.twitter {
+  overflow: visible;
+  overflow: visible;
+
+  width: 120px;
+  height: 200px;
+  margin: 0 40px 0 40px;
+
+  animation: flash 5s 1s ease-in-out alternate infinite;
+
+  fill: none;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 255, 242, 0.6))
+    drop-shadow(-10px 10px 10px rgba(0, 225, 255, 0.6))
+    drop-shadow(10px -10px 10px rgba(0, 247, 255, 0.6))
+    drop-shadow(10px 10px 10px rgba(0, 204, 255, 0.6));
+}
+.twitter path {
+  stroke: rgb(255, 255, 255);
+  filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
+  stroke-width: 3px;
+}
+.twitter rect {
+  stroke: rgb(0, 162, 255);
+  stroke-width: 3px;
+}
+.twitter path {
+  animation: twitter 5s linear infinite;
+
+  fill: white;
+}
+@keyframes twitter {
+  0% {
+    fill: none;
+  }
+  50% {
+    fill: none;
+  }
+  51% {
+    fill: white;
+  }
+  52% {
+    fill: none;
+  }
+  75% {
+    fill: none;
+  }
+  76% {
+    fill: white;
+  }
+  77% {
+    fill: none;
+  }
+  78% {
+    fill: white;
+  }
+  79% {
+    fill: none;
+  }
+}
+.consult {
+  font-size: 1.5em;
+
+  width: 500px;
+  height: 400px;
+  padding: 50px;
+  margin: 0 auto;
+
+  list-style: circle;
+  list-style-position: inside;
+
+  animation: shadow 2s linear infinite alternate;
+
+  border-radius: 20px;
+  box-shadow: -1px -1px white, 1px -1px white, 1px 1px white, -1px 1px white,
+    0 0 0.1em white, 0 0 0.1em white inset, 0 0 0.5em white,
+    0 0 0.5em white inset, 0 0 1em white, 0 0 1em white inset;
+  text-shadow: 5px 5px 10px rgb(254, 254, 254);
+}
+a {
+  text-decoration: none;
+
+  color: white;
+}
+h1 {
+  margin: 20px 0;
+
+  text-align: center;
+
+  color: white;
+  text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+    0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff,
+    0 0 400px #00b3ff;
+}
+h2 {
+  font-size: 3em;
+
+  margin: 20px auto;
+
+  animation: flash 5s ease-in-out -1s alternate infinite;
+  text-align: center;
+
+  color: white;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white,
+    0 0 120px white, 0 0 200px white, 0 0 300px white;
+}
+
+footer {
+  margin: 30px auto 0;
+
+  text-align: center;
+
+  color: gray;
+}
+
+h1 span {
+  font-size: 3em;
+
+  margin: 0;
+  padding: 10px;
+
+  animation: ani 5s linear infinite;
+
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px skyblue;
+}
+@keyframes ani {
+  from {
+    filter: hue-rotate(-60deg);
+  }
+  to {
+    filter: hue-rotate(60deg);
+  }
+}
