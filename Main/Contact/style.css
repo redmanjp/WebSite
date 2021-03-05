@@ -40,6 +40,7 @@
 .box ul {
   white-space: normal;
   list-style-position: inside;
+  text-align: left;
 }
 ul {
   list-style-type: circle;
