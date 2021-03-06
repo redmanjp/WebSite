@@ -18,7 +18,7 @@ h2{
   text-align: center;
 }
 fire{
-	color: #f00;
+	color: #000;
 	text-decoration: none;
 	-webkit-transition: 0.8s;
 	-moz-transition: 0.8s;
@@ -27,7 +27,7 @@ fire{
 	transition: 0.8s;
 }
 fire:hover {
-	color: #0f0;
+	color: #FFFFFF;
 }
 fire:hover img {
   opacity: 0.8;
