@@ -17,7 +17,7 @@ body{filter:invert(100%);}
     
   <body bgcolor="#000000">
 <h2>
-  語られるべきでないこともある。
+  語られるべきでないこともある。???
   </h2>
   <div class="box-row1">
 <marquee height="100" width="53" behavior="alternate" direction="up" scrollamount="1" scrolldelay="30" truespeed>
@@ -27,7 +27,7 @@ body{filter:invert(100%);}
 <fire><img class="fire" src="fire.png" onmouseout="this.src='none.jpg'"></fire>
 </marquee>　
 <marquee height="100" width="53" behavior="alternate" direction="up" scrollamount="1" scrolldelay="30" truespeed>
-<img class="fire" src="fire.png" onmouseover="this.src='none.jpg'" onmouseout="this.src='none.jpg'">
+<img class="fire" src="fire.png" onmouseout="over(this)">
 </marquee>　
 <marquee height="100" width="53" behavior="alternate" direction="up" scrollamount="1" scrolldelay="30" truespeed>
 <img class="fire" src="fire.png" onmouseover="this.src='none.jpg'" onmouseout="this.src='none.jpg'">
@@ -42,5 +42,14 @@ body{filter:invert(100%);}
   </button>
     </body>
     <small>&copy; 2021 手芸同好会　　製作者：Suzuki</small>
-
+    
+<script>
+    function over(x) {
+        x.style.backgroundColor = "blue";
+    }
+ 
+    function leave(x) {
+        x.style.backgroundColor = "red";
+    }
+</script>
     </html>
