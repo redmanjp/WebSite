@@ -30,9 +30,9 @@ fire:hover {
 	color: #FFFFFF;
 }
 fire:hover img {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  -moz-opacity: 0.8;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
