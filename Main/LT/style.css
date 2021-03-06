@@ -9,6 +9,7 @@ h2{
 }
 .box-row1 {
   text-align: center;
+  transition: all 1.5s;
 }
 .box-row2 {
   text-align: center;
