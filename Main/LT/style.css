@@ -28,6 +28,10 @@ h2{
   right: 30px;
   padding: 6px 40px;
 }
+body {
+　　background-color: black;
+　　color: black;
+} 
 <style type="text/css">
 <!--
 body{filter:invert;}
