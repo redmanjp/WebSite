@@ -17,7 +17,7 @@ body{filter:invert(100%);}
     
   <body bgcolor="#000000">
 <h2>
-  語られるべきでないこともある。???
+  語られるべきでないこともある。???dut
   </h2>
   <div class="box-row1">
 <marquee height="100" width="53" behavior="alternate" direction="up" scrollamount="1" scrolldelay="30" truespeed>
@@ -45,11 +45,11 @@ body{filter:invert(100%);}
     
 <script>
     function over(x) {
-     x.animate([{opacity: '1'}, {opacity: '0'}], 1500)    
+     x.animate([{opacity: '1'}, {opacity: '0'}], 1500,erase(x))    
     }
  
-    function leave(x) {
-        x.style.backgroundColor = "red";
+    function erase(x) {
+        x.src='none.jpg';
     }
 </script>
     </html>
