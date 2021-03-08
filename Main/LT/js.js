@@ -1,14 +1,3 @@
-
-
-	
-$(function() {
- 
-  // ボタンをクリックしたら発動
- $("fire").click(function() {
- 
-    // 1.5秒かけてゆっくりフェードインさせる
-    $(this).fadeOut(1500);
- 
-  });    
-
+$('fire').fadeOut( 2000 );
 	  
+console.log('フェードアウトされました！');
