@@ -7,7 +7,7 @@ $(function() {
  $('fire').mouseover(function() {
  
     // 1.5秒かけてゆっくりフェードインさせる
-    $('this').fadeOut(1500);
+    $(this).fadeOut(1500);
  
   });    
 
