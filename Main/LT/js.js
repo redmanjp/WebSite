@@ -1,3 +1,3 @@
 $("fire").on("mouseover",function(){
-$().fadeOut( 2000 );
+$(this).fadeOut( 2000 );
 });
