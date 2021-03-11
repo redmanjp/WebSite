@@ -2,7 +2,6 @@ var count = 0;
 $("fire").on("mouseover",function(){
 $(this).fadeOut( 1000 );
 var count++;
-});
 
 if (count == 4) {
  
@@ -10,3 +9,6 @@ if (count == 4) {
 　　　　console.log('ああ。');
  
 　　}
+
+});
+
