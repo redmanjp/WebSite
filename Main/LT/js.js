@@ -3,7 +3,7 @@ var donef = 'AA';
 $("fire").on("mouseover",function(){
 $(this).fadeOut( 1000 );
 
-if (donef.indexOf(this)=0) {
+if (donef.indexOf(this)!=0) {
 donef = this+donef;
 count++;
 }
