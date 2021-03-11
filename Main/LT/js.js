@@ -1,7 +1,7 @@
 var count = 0;
 $("fire").on("mouseover",function(){
 $(this).fadeOut( 1000 );
-var count++;
+count++;
 
 if (count == 4) {
  
