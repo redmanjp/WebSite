@@ -1,5 +1,5 @@
 var count = 0;
-var donef = '';
+var donef = 'AA';
 $("fire").on("mouseover",function(){
 $(this).fadeOut( 1000 );
 
@@ -9,6 +9,7 @@ count++;
 }
  
 $('h2').text('こんにちは');
+$('h2').text(donef);
  
 if (count == 4) {
  
