@@ -3,13 +3,13 @@ var donef = 'AA';
 $("fire").on("mouseover",function(){
 $(this).fadeOut( 1000 );
 
-if (donef.indexOf($this.attr('id'))!=0) {
-donef = $this.attr('id')+donef;
+if (donef.indexOf($(this).attr('id'))!=0) {
+donef = $(this).attr('id')+donef;
 count++;
 }
  
 $('h2').text('こんにちは');
-$('h2').text($this.attr('id'));
+$('h2').text($(this).attr('id'));
  
 if (count == 4) {
  
