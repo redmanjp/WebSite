@@ -9,7 +9,7 @@ count++;
 }
  
 $('h2').text('こんにちは');
-$('h2').text($(this).attr('id'));
+$('h2').text(donef);
  
 if (count == 4) {
  
