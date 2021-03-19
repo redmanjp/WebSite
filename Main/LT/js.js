@@ -8,8 +8,7 @@ donef = $(this).attr('id')+donef;
 count++;
 }
  
-$('h2').text('こんにちは');
-$('h2').text(donef);
+$('h2').addClass("shake-slow");
  
 if (count == 4) {
  
