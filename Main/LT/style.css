@@ -16,8 +16,8 @@ fire{
 #bg{
    background-color:"#000000";
    opacity:0.9;
-   width:50%;
-   height:50vh;
+   width:100%;
+   height:75vh;
 }
 .fixed_btn
 {
