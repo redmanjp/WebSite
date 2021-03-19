@@ -30,7 +30,7 @@ fire{
   background-color:#FFFFFF;
   opacity:0.5;
   visibility:visible;
-  z-index:2;
+  z-index:1;
 }
 .fixed_btn
 {
