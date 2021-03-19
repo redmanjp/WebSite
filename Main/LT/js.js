@@ -8,12 +8,12 @@ donef = $(this).attr('id')+donef;
 count++;
 }
  
-$('h2').addClass("shake-slow");
+$("h2").addClass("shake-slow");
  
 if (count == 4) {
  
     // コンソールに県名を表示
-$('h2').text('消　え　ろ');
+$('h2').text('消　\　ろ');
  
 　　}
 
