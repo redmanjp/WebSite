@@ -8,7 +8,7 @@ donef = $(this).attr('id')+donef;
 count++;
 }
  
-$("h2").addClass("shake-slow");
+$("h2").addClass("shake-slow shake-constant");
  
 if (count == 4) {
  
