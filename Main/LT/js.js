@@ -11,6 +11,7 @@ count++;
 $("h2").addClass("shake-opacity shake-constant");
 $("#bg").fadeTo("slow", (1-(count*0.25)));
 $("[id=bar]").fadeTo("slow", (1-(count*0.3)));
+$("[id=retn]").fadeTo("slow", 1);
  if(count==4){
     // コンソールに県名を表示
 $('h2').text('消　\　ろ');
