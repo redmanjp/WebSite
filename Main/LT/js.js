@@ -12,12 +12,12 @@ $("[id=bar]").fadeTo("slow", (1-(count*0.3)));
 $("[id=retn]").fadeTo("slow", 1);
  if(count==4){
     // コンソールに県名を表示
-
-$("fire").fadeTo("slow", (1)); 
+setTimeout(function(){
+ $("fire").fadeTo("slow", (1)); 
 $("[id=bar]").fadeTo("slow", (1)); 
 $("[id=bg]").fadeTo("slow", (1)); 
-　　}
-
+},3000);
+}
 }
 });
 
