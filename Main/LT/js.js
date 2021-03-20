@@ -13,7 +13,7 @@ $("[id=retn]").fadeTo("slow", 1);
  if(count==4){
     // コンソールに県名を表示
 
-$("[class=fire]").fadeTo("slow", (1)); 
+$("fire").fadeTo("slow", (1)); 
 $("[id=bar]").fadeTo("slow", (1)); 
 $("[id=bg]").fadeTo("slow", (1)); 
 　　}
