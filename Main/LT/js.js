@@ -9,7 +9,7 @@ count++;
 }
  
 $("h2").addClass("shake-opacity shake-constant");
-$("#bg").fadeTo("slow", (count*0.25));
+$("#bg").fadeTo("slow", (1-(count*0.25)));
  if(count==4){
     // コンソールに県名を表示
 $('h2').text('消　\　ろ');
