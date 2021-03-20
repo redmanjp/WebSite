@@ -16,7 +16,7 @@ setTimeout(function(){
  $("fire").fadeTo("slow", (1)); 
 $("[id=bar]").fadeTo("slow", (1)); 
 $("[id=bg]").fadeTo("slow", (1)); 
-},3000);
+},2000);
 }
 }
 });
