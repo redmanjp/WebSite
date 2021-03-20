@@ -9,8 +9,9 @@ count++;
 }
  
 $("h2").addClass("shake-opacity shake-constant");
- 
-if (count == 4) {
+$("bg").animate({ 
+    opacity: count*(0.25),
+  }, 500 );
  
     // コンソールに県名を表示
 $('h2').text('消　\　ろ');
