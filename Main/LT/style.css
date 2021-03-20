@@ -19,6 +19,10 @@ fire{
    width:100%;
    height:55vh;
 }
+#retn{
+   background-color:"#0000";
+   opacity:1;
+}
 
 #hole{
    position:fixed;
