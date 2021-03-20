@@ -1,9 +1,9 @@
 var count = 0;
 var donef = 'AA';
 $("fire").on("mouseover",function(){
-$(this).fadeOut( 1000 );
 
 if (donef.indexOf($(this).attr('id'))==-1) {
+$(this).fadeOut( 1000 );
 donef = $(this).attr('id')+donef;
 count++;
  
