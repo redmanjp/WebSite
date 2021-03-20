@@ -4,6 +4,11 @@ $("fire").on("mouseover",function(){
 
 if (donef.indexOf($(this).attr('id'))==-1) {
 $(this).fadeOut( 1000 );
+$(this).animate({
+width: "0px",
+height: "0px"
+},1000);
+ 
 donef = $(this).attr('id')+donef;
 count++;
  
