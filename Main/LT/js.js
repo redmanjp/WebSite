@@ -13,9 +13,9 @@ $("[id=retn]").fadeTo("slow", 1);
  if(count==4){
     // コンソールに県名を表示
 setTimeout(function(){
- $("fire").fadeTo("slow", (1)); 
-$("[id=bar]").fadeTo("slow", (1)); 
-$("[id=bg]").fadeTo("slow", (1)); 
+ $("fire").fadeTo("slow",100, (1)); 
+$("[id=bar]").fadeTo("slow",1000, (1)); 
+$("[id=bg]").fadeTo("slow",1000, (1)); 
 },2000);
 }
 }
