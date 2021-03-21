@@ -24,12 +24,17 @@ fire{
    opacity:1;
 }
 
-#hole{
-   position:fixed;
-   top:100px;
-   left:100px;
-   width:100px;
-   height:100px;
+.box12{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5989cf;
+    background: #c6e4ff;
+    border-bottom: solid 6px #aac5de;
+    border-radius: 9px;
+}
+.box12 p {
+    margin: 0; 
+    padding: 0;
 }
 #fadeLayer {
   position:absolute;
