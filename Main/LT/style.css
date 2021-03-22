@@ -19,9 +19,9 @@ fire{
    width:100%;
    height:55vh;
 }
-#retn{
-   background-color:"#0000";
-   opacity:1;
+#spin{
+  transform: rotate(30deg);
+  transform-origin: bottom left;
 }
 
 .box12{
