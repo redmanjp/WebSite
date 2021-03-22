@@ -15,10 +15,11 @@ $("[id=retn]").fadeTo("slow", 1);
  if(count==4){
     // コンソールに県名を表示
 setTimeout(function(){
+$("#spin").css('transform', 'rotate(' + 90 + 'deg)'); 
+$("div").removeClass("shake-slow");
  $("fire").fadeTo(200, (1)); 
 $("[id=bar]").fadeTo(1000, (1)); 
 $("[id=bg]").fadeTo(1000, (1)); 
-$("#spin").css('transform', 'rotate(' + 90 + 'deg)'); 
  ;
 },2000);
 }
