@@ -27,6 +27,7 @@ fire{
 #back{
 position:absolute; 
 z-index: -1;
+text-align: center;
 }
 
 .box12{
