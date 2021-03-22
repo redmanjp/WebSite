@@ -22,6 +22,7 @@ fire{
 #spin{
   transform: rotate(0deg);
   transform-origin: top left;
+  transform: translateX(0px);
 }
 
 .box12{
@@ -48,17 +49,6 @@ display:inline-block;
   opacity:0.5;
   visibility:visible;
   z-index:1;
-}
-.fixed_btn
-{
-  text-align: center;
-  color:cyan;
-  font-family: 'Bungee Shade', cursive;
-  font-size: 20px;
-  position: fixed;
-  bottom: 30px; 
-  right: 30px;
-  padding: 6px 40px;
 }
 body {
 　　background-color: black;
