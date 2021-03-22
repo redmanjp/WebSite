@@ -24,6 +24,10 @@ fire{
   transform-origin: top left;
   transform: translateX(0px);
 }
+#back{
+position:absolute; 
+z-index: -1;
+}
 
 .box12{
 display:inline-block; 
