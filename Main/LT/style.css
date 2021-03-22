@@ -21,7 +21,7 @@ fire{
 }
 #spin{
   transform: rotate(0deg);
-  transform-origin: top left;
+  transform-origin: top (left+10px);
 }
 
 .box12{
