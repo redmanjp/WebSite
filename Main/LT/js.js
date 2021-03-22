@@ -18,7 +18,7 @@ setTimeout(function(){
  $("fire").fadeTo(200, (1)); 
 $("[id=bar]").fadeTo(1000, (1)); 
 $("[id=bg]").fadeTo(1000, (1)); 
-$("#spin").css('transform', 'rotate(' + 0 + 'deg)'); 
+$("#spin").css('transform', 'rotate(' + 90 + 'deg)'); 
  ;
 },2000);
 }
