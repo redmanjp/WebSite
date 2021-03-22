@@ -18,6 +18,10 @@ setTimeout(function(){
  $("fire").fadeTo(200, (1)); 
 $("[id=bar]").fadeTo(1000, (1)); 
 $("[id=bg]").fadeTo(1000, (1)); 
+$("#spin").css({transform-origin: "bottom right"});
+$("#spin").css({transform: "rotate(75deg)"});
+ 
+ ;
 },2000);
 }
 }
