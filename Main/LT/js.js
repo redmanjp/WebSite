@@ -17,7 +17,11 @@ $("[id=retn]").fadeTo("slow", 1);
 setTimeout(function(){
 $("#spin").css('transform', 'rotate(' + 90 + 'deg)'); 
 $("[id=linkc]").css('color', '#00FFFF'); 
-$("[id=linkc]").fadeToggle(1000)
+$(function(){
+    setInterval(function(){
+　　　　$("[id=linkc]").fadeToggle(1000);
+    },1000);
+});
  $("div").removeClass("shake-slow");
  
  $("fire").fadeTo(200, (1)); 
