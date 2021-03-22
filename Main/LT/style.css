@@ -20,8 +20,8 @@ fire{
    height:55vh;
 }
 #spin{
-  transform: rotate(30deg);
-  transform-origin: bottom left;
+  transform: rotate(70deg);
+  transform-origin: top left;
 }
 
 .box12{
