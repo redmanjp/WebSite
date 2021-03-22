@@ -16,7 +16,6 @@ $("[id=retn]").fadeTo("slow", 1);
     // コンソールに県名を表示
 setTimeout(function(){
 $("#spin").css('transform', 'rotate(' + 90 + 'deg)'); 
-$("#spin").css('transform', 'translateX(' + 10  + 'px)'); 
 $("div").removeClass("shake-slow");
  $("fire").fadeTo(200, (1)); 
 $("[id=bar]").fadeTo(1000, (1)); 
