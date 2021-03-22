@@ -14,7 +14,7 @@ h2{
 fire{
 }
 #linkc{
-    color: #FFFFFF;
+    color: #000000;
 }
 #bg{
    background-color:"#FFFFFF";
@@ -30,7 +30,7 @@ fire{
 #back{
 position:absolute; 
   white-space: nowrap;
-  font-size: 40px;
+  font-size: 38px;
 z-index: -1;
 text-align: center;
  width: 200px;
